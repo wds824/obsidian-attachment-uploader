@@ -232,7 +232,7 @@ class SettingTab extends PluginSettingTab {
 			.setDesc(
 				`${t(
 					"The command is executed using the exec method of child_process. %s indicates the path of the file to be uploaded, reserve it. Extract the uploaded link from the shell output after execution,",
-				)}‘urlMatch = stdout.match(/s+(https?:/ / S +) /)’`,
+				)}‘urlMatch = stdout.match(/s?(https?:/ / S +) /)’`,
 			)
 			.addTextArea((textArea) => {
 				textArea
